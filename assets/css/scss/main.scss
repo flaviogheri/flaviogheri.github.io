@@ -136,6 +136,31 @@ table tfoot td {
   clear: both;
 }
 
+/* Side Buttons Styles */
+.side-buttons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 15px;
+  background-color: #007bff; /* Change this to your desired background color */
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; /* Change this to your desired text color */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Change this to your desired button color */
+}
+
+
+
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 @import 'parts/home-page';
 
