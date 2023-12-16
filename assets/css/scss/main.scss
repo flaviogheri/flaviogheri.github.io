@@ -151,13 +151,14 @@ table tfoot td {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  border: 2px solid #555; /* Add border styling */
+  border: 2px solid #355; /* Add border styling */
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary {
-  background-color: #555; /* Change this to your desired grey button color */
+  color: #fff; /* Your desired text color for primary button */
+  border: 1px solid #007bff; /* Border color for primary button */
 }
 
 .btn:hover, .btn-primary:hover {
