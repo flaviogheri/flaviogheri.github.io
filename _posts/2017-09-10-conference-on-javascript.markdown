@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Machine Learning Project
-date: 2017-09-10 00:00:00 +0300
+date: 2023-10-20 00:00:00 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: daylight.gif # Add image post (optional)
-tags: [Js, Conference] # add tag
+tags: [machine learning, Neural Networks, DT, Image Processing] # add tag
 ---
 
 For the final coursework of RO47002 (Machine Learning), I was to develop a machine learning model that could direct a robot towards a red box at different times of day.
@@ -25,7 +25,7 @@ For this project several steps were implemented:
 
 In order to keep the model simple, 2 main group of features were to be evaluated: 
 > 1. Red pixel values in the image (position of pixel with maximum red hue, mean position of red intensity and standard deviation of red hue across image)
-> 2. Boundaries of shapes (using Canny edge extraction and probabilistic Hough)
+> 2. Boundaries of shapes (using image processing techniques such as Canny edge extraction and probabilistic Hough)
 
 ### 1. Red Pixel Values
 
