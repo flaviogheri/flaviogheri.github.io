@@ -1,9 +1,9 @@
 ---
 layout: post
 title: MAC Challenge (Marine Autonomy Challenge)
-date: 2022-12-06 13:32:20 +0300
+date: 2022-06-12 13:32:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: i-rest.jpg # Add image post (optional)
+img: MAChallenge_boat.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Competition, Robotics, Maratime Engineering]
 ---
@@ -12,11 +12,29 @@ In this project, I, aside with my team, developed code for an autonomous vessel 
 Here is the link to the competition:
 
 https://www.maritimeindustries.org/events/marine-autonomy-challenge-machallenge
+00
+and an article from the university of southampton of my team :
+
+https://www.southampton.ac.uk/smmi/news/2022/11/15-southampton-engineering-students-enter-marine-autonomy-challenge.page
+
+The team was, called SMART, was formed by:
+* Me - Flavio Gheri (at the time Mechanical engineer who was president of the Robotics society)
+* Nefelie (Maratime Engineer with strong routes in machine learning and robotic)
+* Chihiro (Master student who previously was part of the research wing of Japans ministry of defense)
+* Prateek (Master student in Maratime engineering)
+* Joe (Maratime engineering student who was developping a thesis on probabilistic localisation for autonomous vessels with Blair Thornton)
+
+Prof [Blair Thornton](https://scholar.google.com/citations?user=fpLYlVwAAAAJ&hl=en&oi=ao) proposed me to join the team for my expertise in robotics. Other professors that were supervising are project included [Nicholas Townsend](https://scholar.google.com/citations?user=z9utG3sAAAAJ&hl=en&oi=ao) and [Stephen Turnock](https://scholar.google.com/citations?user=IRoMIokAAAAJ&hl=en&oi=ao).
+
+
+
 
 ## A little more on MAChallenge
 
 MAChallenge is a bi-annual challenge open to student teams at UK universities. Each team is provided with a simulator to work on and then given the final boat on the day of the competition.
 The competition is then carried out on a 2m catamaran.
+
+<!-- ![I and My friends]({{site.baseurl}}/assets/img/MAChallenge_boat.jpg) -->
 
 The competition is devised into 5 challenges, which are: 
 
@@ -30,23 +48,24 @@ The USV is required to follow a loop track and reactively avoid stationary obstr
 
 ### Challenge 3: Berthing
 
-The USV is required to approach berth from a given 
+The USV is required to approach berth from a given point and stop safely at the berth. This means that it must fully stop in the water at 1m from the berth and be parallel. 
 
 ### Challenge 4: Searching for Pollution
 
+The USV is required to autonomously search and map an area of pollution. Concentration of the pollutant is given by a virtual sensor. The USV will then need to record and return the maximum values, and, consequently, the source.
+
 ### Challenge 5: Searching for surface 'targets'
 
+The USV will be required to automatically search a specified area for a number of physical objects (such as milk bottles, buoys etc..).
+
+## How Project was tackled
+
+To start 
 
 
-90's yr crucifix, selvage 8-bit listicle forage cliche shoreditch hammock microdosing synth. Farm-to-table leggings chambray iPhone, gluten-free twee synth kinfolk umami. Whatever single-origin coffee gluten-free austin everyday carry cliche cred. Plaid ramps kitsch woke pork belly organic. Trust fund whatever coloring book kombucha brooklyn. Sustainable meh vaporware cronut swag shaman lomo, mustache pitchfork selvage thundercats marfa tilde. Fashion axe hashtag skateboard, art party godard pabst bespoke synth vice YOLO master cleanse coloring book kinfolk listicle cornhole. Try-hard mixtape umami fanny pack man bun gastropub franzen tbh. Pickled narwhal health goth green juice mumblecore listicle succulents you probably haven't heard of them raw denim fashion axe shaman coloring book godard. Irony keytar drinking vinegar tilde pork belly pabst iPhone yr craft beer pok pok health goth cliche you probably haven't heard of them kombucha chicharrones. Direct trade hella roof party chia. Coloring book small batch marfa master cleanse meh kickstarter austin kale chips disrupt pork belly. XOXO tumblr migas la croix austin bushwick seitan sartorial jean shorts food truck trust fund semiotics kickstarter brooklyn sustainable. Umami knausgaard mixtape marfa. Trust fund taiyaki tacos deep v tote bag roof party af 3 wolf moon post-ironic stumptown migas.
 
-![I and My friends]({{site.baseurl}}/assets/img/we-in-rest.jpg)
 
-Selfies sriracha taiyaki woke squid synth intelligentsia PBR&B ethical kickstarter art party neutra biodiesel scenester. Health goth kogi VHS fashion axe glossier disrupt, vegan quinoa. Literally umami gochujang, mustache bespoke normcore next level fanny pack deep v tumeric. Shaman vegan affogato chambray. Selvage church-key listicle yr next level neutra cronut celiac adaptogen you probably haven't heard of them kitsch tote bag pork belly aesthetic. Succulents wolf stumptown art party poutine. Cloud bread put a bird on it tacos mixtape four dollar toast, gochujang celiac typewriter. Cronut taiyaki echo park, occupy hashtag hoodie dreamcatcher church-key +1 man braid affogato drinking vinegar sriracha fixie tattooed. Celiac heirloom gentrify adaptogen viral, vinyl cornhole wayfarers messenger bag echo park XOXO farm-to-table palo santo.
 
->Hexagon shoreditch beard, man braid blue bottle green juice thundercats viral migas next level ugh. Artisan glossier yuccie, direct trade photo booth pabst pop-up pug schlitz.
-
-Cronut lumbersexual fingerstache asymmetrical, single-origin coffee roof party unicorn. Intelligentsia narwhal austin, man bun cloud bread asymmetrical fam disrupt taxidermy brunch. Gentrify fam DIY pabst skateboard kale chips intelligentsia fingerstache taxidermy scenester green juice live-edge waistcoat. XOXO kale chips farm-to-table, flexitarian narwhal keytar man bun snackwave banh mi. Semiotics pickled taiyaki cliche cold-pressed. Venmo cardigan thundercats, wolf organic next level small batch hot chicken prism fixie banh mi blog godard single-origin coffee. Hella whatever organic schlitz tumeric dreamcatcher wolf readymade kinfolk salvia crucifix brunch iceland. Literally meditation four loko trust fund. Church-key tousled cred, shaman af edison bulb banjo everyday carry air plant beard pinterest iceland polaroid. Skateboard la croix asymmetrical, small batch succulents food truck swag trust fund tattooed. Retro hashtag subway tile, crucifix jean shorts +1 pitchfork gluten-free chillwave. Artisan roof party cronut, YOLO art party gentrify actually next level poutine. Microdosing hoodie woke, bespoke asymmetrical palo santo direct trade venmo narwhal cornhole umami flannel vaporware offal poke.
 
 * Hexagon shoreditch beard
 * Intelligentsia narwhal austin
