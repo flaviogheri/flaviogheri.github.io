@@ -11,11 +11,12 @@ In this project, I, aside with my team, developed code for an autonomous vessel 
 
 Here is the link to the competition:
 
-https://www.maritimeindustries.org/events/marine-autonomy-challenge-machallenge
-00
+[![Marine Autonomy Challenge](https://your-image-url.com)](https://www.maritimeindustries.org/events/marine-autonomy-challenge-machallenge)
+
 and an article from the university of southampton of my team :
 
-https://www.southampton.ac.uk/smmi/news/2022/11/15-southampton-engineering-students-enter-marine-autonomy-challenge.page
+[![Southampton Engineering Students Enter Marine Autonomy Challenge](https://your-image-url.com)](https://www.southampton.ac.uk/smmi/news/2022/11/15-southampton-engineering-students-enter-marine-autonomy-challenge.page)
+
 
 The team was, called SMART, was formed by:
 * Me - Flavio Gheri (at the time Mechanical engineer who was president of the Robotics society)
