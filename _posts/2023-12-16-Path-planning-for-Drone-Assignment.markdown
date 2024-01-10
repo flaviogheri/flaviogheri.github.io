@@ -2,18 +2,18 @@
 layout: post
 title: Path Planning for Drone Assignment
 date: 2023-12-16 00:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: In this project (part of coursework for RO47005), we detail the design and implementation of a decision-making system for a multi-rotor drone, specifically a quad-copter drone.
 img: path_planning_project.png # Add image post (optional)
 tags: [Productivity, Software] # add tag
 ---
 
 ### Project Description
 
-In this project (part of coursework for RO47005), we detail the design and implementation of a decision-making system for a multi-rotor drone, more specifically that for a quad-copter drone.
+In this project (part of coursework for RO47005), we detail the design and implementation of a decision-making system for a multi-rotor drone, specifically a quad-copter drone.
 
-Path planning algorithms such as RRT, RRT*, IB-RRT* (intelligent Bidirectional) and A* will be coded from scratch and tested in 3 environments in order to investigate which is believed to be most effective. 
+Path planning algorithms such as RRT, RRT*, IB-RRT* (Intelligent Bidirectional), and A* will be coded from scratch and tested in three environments to investigate which is believed to be most effective.
 
-Obstacle Avoidance for moving obstacles is also be developed for the drone via the Velocity Obstacles algorithm. 
+Obstacle avoidance for moving obstacles will also be developed for the drone via the Velocity Obstacles algorithm.
 
 * include more information of what was done in the project* 
 
