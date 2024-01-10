@@ -16,8 +16,7 @@ Lunar zebro is a unique six-legged with the objective of operating in a swarm on
 Regrettably, owing to the confidential nature of the undertaking, not many details can be disclosed at this moment.
 
 The path planning and obstacle detection module can be divided into smaller sub-modules. *write more here about the rover system breakdown*
-
-![Rock detections](rock_detections.png)
+![Rock detections](/assets/img/rock_detections.png)
 
 Artificial Potential field is used due to its computational efficiency compared to many other path planning methods. 
 
@@ -31,4 +30,4 @@ Unfortunately, due to the computational power of the rover microcontrollers samp
 Nonetheless, a scope for further research could be to observe if, with a combination of multiple rovers (and in turn the availability  of multiple micorcontrollers), the processor workload could be shared to find the possible paths. 
 
 
-[![Lunar Rover Video](lunarzebro.jpg)](https://www.youtube.com/watch?v=JahFz2Oduk0)
+[![Lunar Rover Video](/assets/img/lunarzebro.jpg)](https://www.youtube.com/watch?v=JahFz2Oduk0)
