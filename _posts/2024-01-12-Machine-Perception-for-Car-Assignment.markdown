@@ -7,6 +7,14 @@ img: how-to-start.jpg # Add image post (optional)
 tags: [Machine Perception, Lidar, KF, BF] # add tag
 ---
 
-In this assignment, transformed camera detections of humans into 3d positions.
+In this project, as part of a coursework for ... lidar, radar and camera vision was combined to detect humans, and map them and the car in 3d space. 
 
-Calibrated car position using lidar positions
+This is done through ICP (on lidar points to find vehicle transformation/movement over time), machine learning (to recognize people), kalman filtering to reduce noise of human detections and car movement. Aswell as particle filtering.
+
+![ROC curve of human detection](/assets/img/ROCurve.png)
+
+![vehicle prediction](/assets/img/vehicle_prediction.png)
+
+![vehicle prediction](/assets/img/vehicle_prediction.png)
+
+![Camera Lidar Points](/assets/img/CameraLidarPoints.png)

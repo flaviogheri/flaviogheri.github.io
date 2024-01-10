@@ -29,7 +29,9 @@ In order to keep the model simple, 2 main group of features were to be evaluated
 
 ### 1. Red Pixel Values
 
-This was simply done by 
+This was simply done by * talk about how red pixel values appeared to be quite distinct for the cube*
 
 
 ![histogram of image]({{site.baseurl}}/assets/img/image_processing.png)
+
+* include more information about hyper parameter tuning of the neural network * 
