@@ -43,17 +43,37 @@ The competition is devised into 5 challenges, which are:
 
 The USV is required to navigate smoothly around loop track using a series of GPS waypoints. The USV should pass within 1 metre of each GPS waypoint and mantain as small as possible average cross-track error.
 
+
 ### Challenge 2: Obstacle Avoidance
 
 The USV is required to follow a loop track and reactively avoid stationary obstructons detected by a virtual sensor. The position of obstacles are provided during the run in the form of regularly updated TTM messages, with target range and bearing.
+
+Images about Obstacle avoidance techniques that we will implement: 
+
+![Mac_route_plan](/assets/img/MAC_planning.png)
+
+![potential_field](/assets/img/potential_field_MAC.png)
+
 
 ### Challenge 3: Berthing
 
 The USV is required to approach berth from a given point and stop safely at the berth. This means that it must fully stop in the water at 1m from the berth and be parallel. 
 
+Here is a shematic of how the vessel was designed to be able to berth.
+
+![berthing](/assets/img/berthing_MAC.png)
+
+
 ### Challenge 4: Searching for Pollution
 
 The USV is required to autonomously search and map an area of pollution. Concentration of the pollutant is given by a virtual sensor. The USV will then need to record and return the maximum values, and, consequently, the source.
+
+
+These are some pollution maps that were estimated from the sensor values that were found when the vessel moved in the water.
+
+![pollution_map_1](/assets/img/MAChallenge.png)
+
+![pollution_map_2](/assets/img/MAChallenge2.png)
 
 ### Challenge 5: Searching for surface 'targets'
 
@@ -68,11 +88,10 @@ To start
 
 
 
+
+<!-- 
 * Hexagon shoreditch beard
 * Intelligentsia narwhal austin
 * Literally meditation four
-* Microdosing hoodie woke
+* Microdosing hoodie woke -->
 
-Wayfarers lyft DIY sriracha succulents twee adaptogen crucifix gastropub actually hexagon raclette franzen polaroid la croix. Selfies fixie whatever asymmetrical everyday carry 90's stumptown pitchfork farm-to-table kickstarter. Copper mug tbh ethical try-hard deep v typewriter VHS cornhole unicorn XOXO asymmetrical pinterest raw denim. Skateboard small batch man bun polaroid neutra. Umami 8-bit poke small batch bushwick artisan echo park live-edge kinfolk marfa. Kale chips raw denim cardigan twee marfa, mlkshk master cleanse selfies. Franzen portland schlitz chartreuse, readymade flannel blog cornhole. Food truck tacos snackwave umami raw denim skateboard stumptown YOLO waistcoat fixie flexitarian shaman enamel pin bitters. Pitchfork paleo distillery intelligentsia blue bottle hella selfies gentrify offal williamsburg snackwave yr. Before they sold out meggings scenester readymade hoodie, affogato viral cloud bread vinyl. Thundercats man bun sriracha, neutra swag knausgaard jean shorts. Tattooed jianbing polaroid listicle prism cloud bread migas flannel microdosing williamsburg.
-
-Echo park try-hard irony tbh vegan pok pok. Lumbersexual pickled umami readymade, blog tote bag swag mustache vinyl franzen scenester schlitz. Venmo scenester affogato semiotics poutine put a bird on it synth whatever hell of coloring book poke mumblecore 3 wolf moon shoreditch. Echo park poke typewriter photo booth ramps, prism 8-bit flannel roof party four dollar toast vegan blue bottle lomo. Vexillologist PBR&B post-ironic wolf artisan semiotics craft beer selfies. Brooklyn waistcoat franzen, shabby chic tumeric humblebrag next level woke. Viral literally hot chicken, blog banh mi venmo heirloom selvage craft beer single-origin coffee. Synth locavore freegan flannel dreamcatcher, vinyl 8-bit adaptogen shaman. Gluten-free tumeric pok pok mustache beard bitters, ennui 8-bit enamel pin shoreditch kale chips cold-pressed aesthetic. Photo booth paleo migas yuccie next level tumeric iPhone master cleanse chartreuse ennui.

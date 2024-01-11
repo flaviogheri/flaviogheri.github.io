@@ -20,6 +20,7 @@ Obstacle avoidance for moving obstacles will also be developed for the drone via
 here is a video of the project: 
 
 PLEASE CLICK ON IMAGE TO SEE THE VIDEO: 
+
 [![Path planning](/assets/img/Drones.jpg)](https://www.youtube.com/watch?v=ACbuyqRv6jc)
 
 
