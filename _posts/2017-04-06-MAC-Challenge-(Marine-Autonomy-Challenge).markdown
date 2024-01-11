@@ -48,32 +48,16 @@ The USV is required to navigate smoothly around loop track using a series of GPS
 
 The USV is required to follow a loop track and reactively avoid stationary obstructons detected by a virtual sensor. The position of obstacles are provided during the run in the form of regularly updated TTM messages, with target range and bearing.
 
-Images about Obstacle avoidance techniques that we will implement: 
-
-![Mac_route_plan](/assets/img/MAC_planning.png)
-
-![potential_field](/assets/img/potential_field_MAC.png)
-
 
 ### Challenge 3: Berthing
 
 The USV is required to approach berth from a given point and stop safely at the berth. This means that it must fully stop in the water at 1m from the berth and be parallel. 
-
-Here is a shematic of how the vessel was designed to be able to berth.
-
-![berthing](/assets/img/berthing_MAC.png)
 
 
 ### Challenge 4: Searching for Pollution
 
 The USV is required to autonomously search and map an area of pollution. Concentration of the pollutant is given by a virtual sensor. The USV will then need to record and return the maximum values, and, consequently, the source.
 
-
-These are some pollution maps that were estimated from the sensor values that were found when the vessel moved in the water.
-
-![pollution_map_1](/assets/img/MAChallenge.png)
-
-![pollution_map_2](/assets/img/MAChallenge2.png)
 
 ### Challenge 5: Searching for surface 'targets'
 
@@ -83,7 +67,21 @@ The USV will be required to automatically search a specified area for a number o
 
 To start 
 
+Here is a shematic of how the vessel was designed to be able to berth.
 
+![berthing](/assets/img/berthing_MAC.png)
+
+These are some pollution maps that were estimated from the sensor values that were found when the vessel moved in the water.
+
+![pollution_map_1](/assets/img/MAChallenge.png)
+
+![pollution_map_2](/assets/img/MAChallenge2.png)
+
+Images about Obstacle avoidance techniques that we will implement: 
+
+![Mac_route_plan](/assets/img/MAC_planning.png)
+
+![potential_field](/assets/img/potential_field_MAC.png)
 
 
 

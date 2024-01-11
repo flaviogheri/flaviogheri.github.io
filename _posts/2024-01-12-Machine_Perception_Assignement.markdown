@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Machine Perception for Car assignment
+title: Machine_Perception_Assignement
 date: 2024-01-12 00:00:00 +0300
-description: In this project, as part of coursework for RO47004: lidar, radar, and camera vision were combined to detect humans and map them, along with the car, in 3D space.
+description: In this project, as part of coursework for RO47004; lidar, radar, and camera vision were combined to detect humans and map them, along with the car, in 3D space.
 img: CameraLidarPoints.png
 tags: [Machine Perception, Lidar, KF, BF] # add tag
 ---
