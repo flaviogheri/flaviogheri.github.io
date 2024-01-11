@@ -2,12 +2,12 @@
 layout: post
 title: Machine Perception for Car assignment
 date: 2024-01-12 00:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: how-to-start.jpg # Add image post (optional)
+description: In this project, as part of coursework for RO47004: lidar, radar, and camera vision were combined to detect humans and map them, along with the car, in 3D space.
+img: CameraLidarPoints.png
 tags: [Machine Perception, Lidar, KF, BF] # add tag
 ---
 
-In this project, as part of coursework for ..., lidar, radar, and camera vision were combined to detect humans and map them, along with the car, in 3D space.
+In this project, as part of coursework for RO47004: lidar, radar, and camera vision were combined to detect humans and map them, along with the car, in 3D space.
 
 This was achieved through ICP (on lidar points to find vehicle transformation/movement over time), machine learning (to recognize people), Kalman filtering to reduce the noise of human detections and car movement, as well as particle filtering.
 
