@@ -23,14 +23,3 @@ In another assignment, stereo camera was trafsormed with lidar and radar points 
 
 3. ```Tracker``` and ```kf``` classes were created to apply a kalman filter to 2D birds-eye view pedestrian location measurements in a static world coordinate frame. 
 More specifically the tracker was designed by assuming a linear movement for each human, and attributing the sensore measurements to tracks by checking if they fit within a gating threshold. If this is not the case, new tracks are created. If tracks are not updated (do not have any measurements within the threshold for given time period), the tracks are eliminated.
-
-
-<!-- In previous projects, image processing and machine learning was made in order to create a algorithm that what look through an image and signal if a human was in the boxes or not. Below is a ROC curve showing the trained model: -->
-
-<!-- ![ROC curve of human detection](/assets/img/ROCurve.png) -->
-
-<!-- Other filters  -->
-
-<!-- ![vehicle prediction](/assets/img/vehicle_prediction.png) -->
-
-<!-- ![vehicle prediction](/assets/img/vehicle_prediction.png) -->

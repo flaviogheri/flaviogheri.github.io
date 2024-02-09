@@ -15,7 +15,7 @@ Path planning algorithms such as RRT, RRT*, IB-RRT* (Intelligent Bidirectional),
 
 Obstacle avoidance for moving obstacles will also be developed for the drone via the Velocity Obstacles algorithm.
 
-* include more information of what was done in the project* 
+* include more information of what was done in the project * 
 
 <!-- here is a video of the project:  -->
 
