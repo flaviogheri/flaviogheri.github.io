@@ -29,6 +29,10 @@ Unfortunately, due to the computational power of the rover microcontrollers samp
 
 Nonetheless, a scope for further research could be to observe if, with a combination of multiple rovers (and in turn the availability  of multiple micorcontrollers), the processor workload could be shared to find the possible paths. 
 
-PLEASE CLICK THE IMAGE BELOW TO SEE A VIDEO ABOUT LUNAR ZEBRO
+<!-- PLEASE CLICK THE IMAGE BELOW TO SEE A VIDEO ABOUT LUNAR ZEBRO -->
 
-[![Lunar Rover Video](/assets/img/lunarzebro.jpg)](https://www.youtube.com/watch?v=JahFz2Oduk0)
+
+
+
+
+<!-- [![Lunar Rover Video](/assets/img/lunarzebro.jpg)](https://www.youtube.com/watch?v=JahFz2Oduk0) -->
