@@ -65,21 +65,28 @@ The USV will be required to automatically search a specified area for a number o
 
 ## How Project was tackled
 
-To start 
 
-Here is a shematic of how the vessel was designed to be able to berth.
+The vessel created a simple grid of waypoints in a given area in order to create an effective map (please look at PDM for my other exploration of more complex path planning techniques).  Due to water dynamics, secondary waypoints around the original waypoints are created for a smoother trajectory with less overshoot. With more time, trajectory planning using splines will be looked into instead.
 
-![berthing](/assets/img/berthing_MAC.png)
+![Mac_route_plan](/assets/img/MAC_planning.png)
 
-These are some pollution maps that were estimated from the sensor values that were found when the vessel moved in the water.
+As previously mentioned, this allowed the rover to create an effective pollution plot (fitting the points found to a gaussian distribution), and to find the source of the pollution. 
 
 ![pollution_map_1](/assets/img/MAChallenge.png)
 
 ![pollution_map_2](/assets/img/MAChallenge2.png)
 
-Images about Obstacle avoidance techniques that we will implement: 
+Finally, since the gps coordinates are much to innacurate to do effective berthing, the laser range finder (single-beam lidar) was used. 
 
-![Mac_route_plan](/assets/img/MAC_planning.png)
+The beam points were used once the vessel was infront of the dock. Here, the line fitting is performed to trace a line to estimate the distance of the vessel.
+
+Here is a shematic of how the vessel was designed to be able to berth.
+
+![berthing](/assets/img/berthing_MAC.png)
+
+Finally obstacle avoidance was envisioned to be done using potential fields, however this was not effectively completed in time (as the object recognition wasnt completly succesful). To see more about a project were this is more succesfully accomplished, please see the Lunar Zebro project.
+
+Images about Obstacle avoidance techniques that we will implement: 
 
 ![potential_field](/assets/img/potential_field_MAC.png)
 
