@@ -38,5 +38,12 @@ LinkedIn: www.linkedin.com/in/flavio-gheri
 
 [Download CV](/assets/pdf/cv_flavio_gheri.pdf){: .btn .btn-primary} -->
 
-### Projects
-#### Link to projects here -->
+![different_maps](/assets/img/pdm/different_maps.png)
+
+
+![schematic_VO](/assets/img/pdm/schematic_VO.png)
+
+![2d_vo](/assets/img/pdm/2d_vo.png)
+
+![drone2](/assets/img/pdm/drone2.png)
+
