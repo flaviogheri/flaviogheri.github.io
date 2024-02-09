@@ -12,17 +12,18 @@ In this project, as the final coursework for TW3720TU, I, alongside my group, wo
 
 To begin a Matrix class was created using templates. This alows the class to work with any input. 
 
-'''
+```
 template <typename T>
 class Matrix {...
-};'''
+};
+```
 
 Overloading operators for '+', '-', and '*' (for both scalar and matrix multiplication) were created in order to perform matrix operations on the new class intuitively.
 
 
 
 
-'''
+```
 Matrix<double> m1(2, 2, {1.0, 2.0, 3.0, 4.0});
 Matrix<double> m2(2, 2, {5.0, 6.0, 7.0, 8.0});
 
@@ -45,7 +46,7 @@ class Layer
 This was done so that they could then be implemented by derived classes (Linear and RelU) for a specific behaviour for each type of layer:
 
 Example of forward pass in ReLU:
-'''
+```
         virtual Matrix<T> forward(const Matrix<T>& x) override final 
         {
             // Calculate the forward pass
@@ -70,7 +71,7 @@ Example of forward pass in ReLU:
             // Return the output matrix
             return y;
         }
-'''
+```
 
 example in forward pass in Linear: 
 
