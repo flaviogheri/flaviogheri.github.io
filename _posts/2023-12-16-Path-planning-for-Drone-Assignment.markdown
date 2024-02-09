@@ -3,7 +3,7 @@ layout: post
 title: Path Planning for Drone Assignment
 date: 2023-12-16 00:00:00 +0300
 description: In this project (part of coursework for RO47005), we detail the design and implementation of a decision-making system for a multi-rotor drone, specifically a quad-copter drone.
-img: path_planning_project.png # Add image post (optional)
+img: PDM.gif # Add image post (optional)
 tags: [Productivity, Software] # add tag
 ---
 
@@ -17,12 +17,14 @@ Obstacle avoidance for moving obstacles will also be developed for the drone via
 
 * include more information of what was done in the project* 
 
-here is a video of the project: 
+<!-- here is a video of the project:  -->
 
+
+<!-- 
 PLEASE CLICK ON IMAGE TO SEE THE VIDEO: 
 
 [![Path planning](/assets/img/Drones.jpg)](https://www.youtube.com/watch?v=ACbuyqRv6jc)
-
+ -->
 
 
 
