@@ -115,6 +115,14 @@ table tfoot td {
 
 .post, .article-page {
   background-color: #fff;
+  .project-length {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); // semi-transparent black
+    color: $white;
+  }
 }
 
 ::-moz-selection {

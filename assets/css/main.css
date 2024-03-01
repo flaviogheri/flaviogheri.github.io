@@ -1479,19 +1479,3 @@ a.newer-posts:hover {
     font-size: 21px;
   }
 }
-
-
-
-
-.post-thumbnail {
-  position: relative;
-}
-
-.project-length {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-  color: white;
-}
