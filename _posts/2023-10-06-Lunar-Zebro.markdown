@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Lunar Zebro
+project_length: "4/5"
 date: 2023-10-06 13:32:20 +0300
 description:  # Add post description (optional)
 img: luna_zebro_swarm.jpg # Add image post (optional)
