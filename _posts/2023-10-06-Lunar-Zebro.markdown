@@ -48,12 +48,19 @@ In order to do this, a general potential field made up of 3 fields (outside ring
 
 In the paper, a static potential field is described. By modifying the weight $\gamma$ as a function of time we can allow the formation to move along a path. The potential field surface $f(x,y)$ is described as a bi-variate normal function: 
 
-$$f(x,y) = e^{-(x-x_c)^2 + \gamma (y- y_c)^2}$$
+$$
+f(x,y) = e^{-(x-x_c)^2 + \gamma (y- y_c)^2}
+$$
 
 The partial derivative of x,y is taken to calculate the heading of each velocity: 
 
-$$ d_{x} = f(x,y)2(x - x_{c})$$
-$$ d_{y} = f(x,y)2 \gamma(y - y_{c})$$
+$$
+d_{x} = f(x,y)2(x - x_{c})
+$$
+
+$$
+d_{y} = f(x,y)2 \gamma(y - y_{c})
+$$
 
 In order to attract the agents in an elliptical ring, 3 different differential fields are created, each composed by a sigmoid function which decays their effect when they are no longer relevant (see paper for more details), the fields can be segmented as :
 
@@ -62,8 +69,7 @@ In order to attract the agents in an elliptical ring, 3 different differential f
 - ($SGN*N$) - Field that pushes agents towards front of ring
 
 The overall shape and potential can be seen in Figure 1. The equation that describes it is the following: 
-
-\[
+$$
 \begin{align*}
     \begin{bmatrix}
         v_x \\ v_y
@@ -76,7 +82,7 @@ The overall shape and potential can be seen in Figure 1. The equation that descr
                                                         dx \\ dy
                                                     \end{bmatrix}
 \end{align*}
-\]
+$$
 
 
 ![APF swarm field](/assets/img/lunar_zebro/potential_fields.png)
@@ -87,15 +93,19 @@ The overall shape and potential can be seen in Figure 1. The equation that descr
 
 Additional Sigmoid functions can be used for the obstacle avoidance of each individual agent to its peers (member spacing), and of other obstacles. In the paper, for simplicity, it is assumed that the only obstacles are other members of the swarm. Allowing for the same limiting function to be effectively used. Further research on how effective using this method to get individual agents to avoid obstacles needs to be made.
 
-$$ S_{avoid}(\alpha_{avoid}, r_{avoid}, \Delta R_{avoid})= 1 - \frac{1}{1+e^{\alpha_{avoid}(\sqrt{r_{avoid}-\Delta R_{avoid}})}}$$
+$$
+S_{avoid}(\alpha_{avoid}, r_{avoid}, \Delta R_{avoid})= 1 - \frac{1}{1+e^{\alpha_{avoid}(\sqrt{r_{avoid}-\Delta R_{avoid}})}}
+$$
 
 Some parameters are to be optimized in order to fully successfully use the algorithm. In the paper, a method is not suggested. Nonetheless, by making $S_{in}(R^*)$ arbitrarily small, where $S_{in}(R^*) = \varepsilon$ then we can equate all limiting functions from the various radii of the ring and the $\varepsilon$ parameter.
 
-$$\alpha_{in} = \frac{1}{\Delta R_{in}} \ln\left(\frac{1-\varepsilon}{\varepsilon}\right)$$
+$$
+\alpha_{in} = \frac{1}{\Delta R_{in}} \ln\left(\frac{1-\varepsilon}{\varepsilon}\right)
+$$
 
 The same is repeated for the other limiting functions ($\alpha s$). By adding the Sigmoid for the obstacle avoidance for each individual agent, we find that the final equation, including the avoidance of other obstacles becomes: 
 
-\[
+$$
 \begin{align*}
     \begin{bmatrix}
         v_x \\ v_y
@@ -108,7 +118,7 @@ The same is repeated for the other limiting functions ($\alpha s$). By adding th
                                                                     dx \\ dy
                                                                 \end{bmatrix}
 \end{align*}
-\]
+$$
 
 The paper used the following parameters. It is believed, however, that if this algorithm is to be chosen, that the parameters should be tuned for the Lunar Zebro.
 
