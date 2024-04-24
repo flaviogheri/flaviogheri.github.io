@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Machine Learning Project
+project_length: "2/5"
 date: 2023-10-20 00:00:00 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: daylight.gif # Add image post (optional)

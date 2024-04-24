@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Path Planning for Drone Assignment
+project_length: "3/5"
 date: 2023-12-16 00:00:00 +0300
 description: In this project (part of coursework for RO47005), we detail the design and implementation of a decision-making system for a multi-rotor drone, specifically a quad-copter drone.
 img: PDM.gif # Add image post (optional)
