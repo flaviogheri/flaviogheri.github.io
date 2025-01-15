@@ -30,4 +30,12 @@ $$
 
 Where \(A\) has position $(x_A)$ and radius $(r_A)$, and $(B)$ has position $(x_B)$, radius $(r_B)$, and velocity $(v_B)$.
 
+In our case, as we designed the code in python, for efficiency sake, we decided to simplify the equations into the following: 
 
+$$
+(V_r - V_m) \cdot V_m = 
+\begin{cases}
+    > 0 & \text{(invalid area (obstacle intersection))} \\
+    < 0 & \text{(valid area)}
+\end{cases}
+$$
