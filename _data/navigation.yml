@@ -10,19 +10,12 @@ main:
 
   - title: "Projects"
     url: /projects/   
-    
-  - title: "Blog Posts"
-    url: /year-archive/
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-  
-  
-  # - title: "talks"
-  #   url: /talks/ 
 
-    
+  - title: " Youtube"
+    url: /youtube/
+  
+  - title: " Podcast"
+    url: /podcast/
+
   - title: "Guide"
     url: /markdown/
