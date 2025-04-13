@@ -93,4 +93,4 @@ Competitions
 Additional Courses
 ======
 * Machine Learning Specialization - Andrew NG
-* 
+* Product Management - IBM/Coursera
