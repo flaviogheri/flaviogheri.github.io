@@ -1,0 +1,53 @@
+.project-banner {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* More specific selectors using !important to override any conflicting styles */
+  .project-link,
+  .project-link:visited,
+  .project-link:active,
+  .project-link:hover {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-link:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-image {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .project-text {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .project-text h2 {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+    color: #333;
+    text-decoration: none !important;
+  }
+  
+  .project-text p {
+    font-size: 1.2em;
+    color: #666;
+    text-decoration: none !important;
+  }
+  
