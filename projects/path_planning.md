@@ -5,10 +5,6 @@ permalink: /projects/path_planning/
 ---
 
 
-
-
-Path Planning Assignment
-
 In this project (part of coursework for RO47005), I, together with 3 other students, developed global and local planners from scratch, with the objective being for a quadcopter to safely maneuver around different environments in the PyBullet simulation. I specifically focused on developing the Velocity Obstacles algorithm (local planning).
 
 The global planning algorithms that were developed were: RRT, RRT*, IB-RRT* (intelligent bi-directional), and A*.

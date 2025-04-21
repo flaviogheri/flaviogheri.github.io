@@ -28,7 +28,7 @@
   }
   
   .project-image {
-    width: 30%;
+    width: 15%;
     height: auto;
     object-fit: cover;
   }
@@ -39,12 +39,27 @@
   }
   
   .project-text h2 {
-    font-size: 1.8em;
+    font-size: 1.4em;
     margin: 0 0 10px;
     color: #333;
     text-decoration: none !important;
   }
   
+
+  .project-desc {
+    font-size: 1em;        /* same as your paragraph */
+    color: #666;
+    margin: 0 0 0.5em;     /* spacing below */
+    line-height: 1.4;
+  }
+    
+  .reading-time {
+    font-size: 0.8em;      /* smaller “meta” text */
+    color: #999;
+    margin-top: auto;      /* push to the bottom of the text block */
+  }
+
+
   .project-text p {
     font-size: 1.2em;
     color: #666;

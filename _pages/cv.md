@@ -12,17 +12,17 @@ redirect_from:
 Education
 ======
 
-* M.S.c Robotics, TU Delft, 2025 (expected), 
+* **M.S.c Robotics**, TU Delft, 2025 (expected), 
 * B.S.c Mechaincal Engineering, University of Southampton: Awarded First-Class Honours, 2023
 
 Work experience
 ======
-* HILTI - R&D Computer Vision - Liechtenstein
+* **HILTI - R&D Computer Vision** - Liechtenstein
   * Developping IMU-Lidar Sensor fusion with mm Accuracy and Off-sync capabilities
-  * Supervisor: Micheal Helmberger
+  * Supervisor: Micheal Helmberger, Julien Kindle
 
 
-* NATO - Visiting Researcher - La Spezia, Italy
+* **NATO - Visiting Researcher** - La Spezia, Italy
   * 6 Month: Control and Deep Learning Research
   * Developed a simulator to increase near-collision simulations using MPC Controller. Created RNN model for vessel trajectorz predictions using maneuver-aware pooling in architecture
   * Supervisor: Fellow Paolo Braca, Leonardo Millefiori
@@ -34,21 +34,17 @@ Work experience
   
 Extracurricular Projects
 ======
-* President of Robotics Association - Robosoc
-  * Organized, supervised and led student projects such as "autonomous chessboard", Marine Autonomy Challenge and Autonomous RC cars. 
-  * Taught Basics in electronics, CAD and coding (3 Pillars of Robotics), to younger students.
-
 
 * **President, Robotics Association (Robosoc)**
     * Led and managed diverse student projects, including:
         * "Autonomous Chessboard": Team developing autonomous chessboard with embeeded electronics and x-y manipulation
         * Marine Autonomy Challenge: Directed team in software creating for autonomous surface vessel. Involving Sensor Fusion, Path planning and Obstacle detection+ Avoidance.
         * Solar UAV: Consulted team in development of Solar UAV, involving Aero wing design, electronics and embedded systems.
-    * Conducted educational workshops on the "3 Pillars of Robotics" (electronics, mechanical design, and coding) for younger students, fostering interest and developing foundational skills.
+    * Conducted educational workshops on the "**3 Pillars of Robotics**" (electronics, mechanical design, and coding) for younger students, fostering interest and developing foundational skills.
 
 
 
-* Rugby Team Captain - THOR 2, Delft
+* Rugby **Team Captain** - THOR 2, Delft
   * Team Captain and fly-hald. Leading squad of 15 players. 
     * Proficiency in reading game, team tactics and strategy as fly-half
     * Managed team training session, structuring trainings as to improve both short term and long-term strategies
