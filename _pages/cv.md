@@ -51,8 +51,10 @@ Extracurricular Projects
     * Led team, with critical tactical deisions, handling team conflict and keeping morale
 
 * AI and Robotics Engineer - Lunar Zebro, Delft
- * Software team of Lunar Zebro, one of the first student led teams to be sending a rover to the moon.
+ * Software team of Lunar Zebro, one of the first student led teams to be sending a rover to the moon. Was in small team focused on Sprint towards IAC Milan conference, where we won **"Best Innovative Booth Award at IAC"**
  * Developing Rock Segmentation Stack for Obstacle Avoidance of rover, as well as general software restructuring for the IAC Milan conference
+
+ <!-- NOTE: INSERT THE LINK TOWARDS LUNAR ZEBRO HERE !! -->
 
 
 Soft Skills
