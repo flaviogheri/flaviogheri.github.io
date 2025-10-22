@@ -8,6 +8,20 @@ redirect_from:
 ---
 
 <div class="project-banner">
+  <a href="/projects/poletilt" class="project-link">
+    <img src="/images/projects_posts/camera.png" alt="Localization hand" class="project-image">
+    <div class="project-text">
+      <h2>ROBOT HAND LOCALIZATION</h2>
+      <p class="project-desc">
+        Create High precision (mm accuracy) real-time 6D localization tool using using factors graph optimization framework for a new Hilti product.  
+      </p>
+      <span class="reading-time">20 min read</span>
+    </div>
+  </a>
+</div>
+
+
+<div class="project-banner">
   <a href="/projects/localization_hand" class="project-link">
     <img src="/images/projects_posts/camera.png" alt="Localization hand" class="project-image">
     <div class="project-text">
