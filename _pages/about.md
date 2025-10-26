@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Welcome ! I'm Flavio Gheri, a robotics engineer that is passionate in anything to do with software, electrical or mechanical, (as robotics implies). My academic background includes a bachelors in mechanical engineering and a masters in robotics (software side - with specialization in AI). My work focuses on pushing the boundaries of what's possible in perception, particularly in the areas of SLAM and computer vision. 
+Welcome ! I'm Flavio Gheri, a robotics engineer that is passionate in anything to do with software, electrical or mechanical, (as robotics implies). My academic background includes a bachelors in mechanical engineering and a masters in robotics. My work focuses on perception, particularly in the areas of SLAM and computer vision. 
 
-Nonetheless, in this page, my projects will vary from IoT, embedded systems all the way to podcasting-interviews. You'll find my thoughts, projects and exploration of the world of robotics along with my journey across the field. Whether you are interested in technical deep-dives in SLAM, algorithm explenations, AI projects or simply a tinkerer like me, you'll find all you are looking for in this site.
+In this page, my projects will vary from IoT, embedded systems all the way to podcasting-interviews. You'll find my thoughts, projects and exploration of the world of robotics along with my journey across the field. Whether you are interested in technical deep-dives in SLAM, algorithm explenations, AI projects or simply a tinkerer like me, you'll find all you are looking for in this site.
 
 Curious to see what I've been working on? Head over to my [Projects](/projects) page to explore my portfolio of work! 
 
