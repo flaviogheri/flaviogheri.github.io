@@ -3,7 +3,14 @@ layout: single
 title: '"MagIA, let your imagination loose"'
 permalink: /projects/MagIA/
 ---
-
+<!-- 
+<div style="text-align: center; margin: 2rem 0;">
+  <video autoplay muted loop playsinline style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto; border: 1px solid #ddd; background: #111;">
+    <source src="/images/magia/animated_panorama.mp4" type="video/mp4">
+    Your browser does not support the animated panorama.
+  </video>
+  <div style="font-size: 0.95rem; color: #555; margin-top: 0.75rem;">Animated panorama header demonstrating the generated open-world background experience.</div>
+</div> -->
 
 ## Una Magia
 
@@ -37,6 +44,24 @@ Main Plan:
 
 1. Frontend -> 
 2. Backend -> Python (data processing) + godot (animation)
+
+### Animated Open World Background
+
+The first playable experience should feel like an open world generated from the user's drawings and GenAI production. The animated background is not just decoration — it becomes the game world itself, with the scene dynamically built from drawing inputs, style transfer, and procedural generation.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/images/magia/demo_dancing_stickman.gif" alt="Demo dancing stickman" style="width: 90%; max-width: 900px; height: auto; display: block; margin: 0 auto; border: 1px solid #ddd; padding: 10px; background: #111;">
+  <div style="font-size: 0.95rem; color: #555; margin-top: 0.5rem;">Demo of a drawing-animated character performing a simple dance.</div>
+</div>
+
+This gives a strong proof of concept: the user's page drawing can be turned into an animation directly in the app, with the same sketch becoming part of the world and story.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/images/magia/boy_waving.gif" alt="Boy waving character asset" style="width: 90%; max-width: 900px; height: auto; display: block; margin: 0 auto; border: 1px solid #ddd; padding: 10px; background: #111;">
+  <div style="font-size: 0.95rem; color: #555; margin-top: 0.5rem;">Example of a separated character asset that can be reused in a custom game world.</div>
+</div>
+
+From the same idea, animations and stories can be created in two ways: directly in the page drawing itself, as shown by the `demo_dancing_stickman.gif`, and later as separate reusable assets, as shown by `boy_waving.gif`. That means a story can start from a simple sketch on the page and then scale into a full set of characters and game assets that are later assembled into a custom world.
 
 ### Chapter 2. Initial Scaling
 

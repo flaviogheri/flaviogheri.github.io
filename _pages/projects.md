@@ -7,6 +7,7 @@ redirect_from:
   - /projects
 ---
 
+<!--
 <div class="project-banner">
   <a href="/projects/poletilt" class="project-link">
     <img src="/images/projects_posts/camera.png" alt="Localization hand" class="project-image">
@@ -33,6 +34,7 @@ redirect_from:
     </div>
   </a>
 </div>
+-->
 
 
 <div class="project-banner">
@@ -103,7 +105,7 @@ redirect_from:
   </a>
 </div>
 
-
+<!-- 
 <div class="project-banner">
   <a href="/projects/this_website" class="project-link">
     <img src="/images/projects_posts/website.png" alt="this_website" class="project-image">
@@ -115,4 +117,4 @@ redirect_from:
       <span class="reading-time">2 min read</span>
     </div>
   </a>
-</div>
+</div> -->

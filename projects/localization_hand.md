@@ -2,6 +2,7 @@
 layout: single
 title: "Localization of SO100 Robot Hand"
 permalink: /projects/localization_hand/
+published: false
 ---
 
 In this project, after having developed the SO100 robot arm. I noticed how redunant it was to create an entire robot arm just to teach another. Therefore I decided to simplify it by creating a localization tool with just a single motor and localization tools. 

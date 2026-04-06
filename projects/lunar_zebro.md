@@ -6,7 +6,8 @@ permalink: /projects/lunar_zebro/
 
 Meet the Lunar Zebro, the smallest, (cutest) and cheapest Lunar rover ever!
 
-<!-- INSERT RENDER OF THE LUNAR ZEBRO HERE -->
+
+<img src="/images/lunar_zebro/rover_render.png" alt="rover render" style="border: 1px solid #DDD; padding: 5px;"> 
 
 In this project I worked both as a Software Engineer as well as an AI engineer in the team. More specifically we created the **sprint team** (TRAICI) focused on spearheading the development of the rover towards the IAC Milan conference.
 
@@ -96,7 +97,7 @@ The models are assessed using standard performance metrics such as precision, re
     
 
 To compare the different models in a more visual way, the graph below shows the performance of each model (amount of parameters in millions are found between brackets after every model).
-<img src="https://hackmd.io/_uploads/BJuZuqnHC.png" alt="yolo results" style="border: 1px solid #DDD; padding: 5px;"> 
+<img src="/images/lunar_zebro/yolo_vs_others.png" alt="yolo results" style="border: 1px solid #DDD; padding: 5px;"> 
 
 <div style="text-align: center;">
     <i>Precision, recall and mean average precision for YOLOv10 model scales</i>
@@ -107,7 +108,7 @@ To compare the different models in a more visual way, the graph below shows the 
 #### Discussion
 There are two aspects to discuss: performance and lightweightedness. Starting with the performance of the models you see significant variation across the scales. The YOLOv10-N (Nano) scored very poorly. In the confusion matrix below, you can see that everything was categorized as background and not a single rock was recognized. This is likely due to the limited capacity of the model with too few parameters to accurately detect and classify the rocks.
 
-![yolo_pictures_nano](https://hackmd.io/_uploads/rJsEOzdHR.jpg)
+![yolo_pictures_nano](/images/lunar_zebro/confusion_matrix.png)
 <div style="text-align: center;">
     <i>Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-N.</i>
 </div>
@@ -115,7 +116,7 @@ There are two aspects to discuss: performance and lightweightedness. Starting wi
 ---
 One might expect a continuous increase in performance with the addition of more parameters, but this does not seem to be the case. YOLOv10-L (Large) and YOLOv10-X (Extra-large) show a decrease in precision and recall compared to the medium model. This could be due to overfitting, where the model becomes too complex and does not generalize well. As can be seen below the model seems to be overly sensitive, predicting everything to be a rock which explains the relatively high recall to the other models. This is disadventageous because even though you rather overestimate than underestimate the amount of rocks, seeing rocks everywhere will likely lead to a standstill of the rover. 
 
-![yolo_pictures_large](https://hackmd.io/_uploads/H1KBOzdBC.jpg)
+![yolo_pictures_large](/images/lunar_zebro/confusion_matrix_too_many.png)
 <div style="text-align: center;">
     <i>Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-L.</i>
 </div>
@@ -124,7 +125,7 @@ One might expect a continuous increase in performance with the addition of more 
 
 The YOLOv10-M (Medium) appears to be the undisputed winner when it comes to performance. It achieves a precision of 0.54, a recall of 0.43, leading to an F1-score of 1.28 and a mAP50 of 0.41. Although it is slightly passed by YOLOv10-L in terms of recall, the large model performs very poorly in precision and accuracy, making it less reliable overall. In the ground truth of sample render0008 below, you can also see that some rocks are not marked with a bounding box even though they are correctly predicted by YOLOv10-M, which means that the model is likely to get higher metric scores with a better labeled dataset. Overall it can be said that using the full dataset would increase robustness and perhaps also confidence scores which are now often on the lower end.
 
-![yolo_pictures_medium](https://hackmd.io/_uploads/H1jLdGdSC.jpg)
+![yolo_pictures_medium](/images/lunar_zebro/confusion_matrix_balanced.png)
 <div style="text-align: center;">
     <i>Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M.</i>
 </div>
@@ -135,11 +136,10 @@ Lastly we have to discuss the lightweightedness. The Lunar Zebro rover operates 
 
 The SSD does show to be a worthy contender, as the mAP50 score outperforms all YOLO's apart from the YOLOv10-M. It is notable that the amount of parameters of the SSD model are similar to the YOLOv10-L model. However, the amount of FLOPs is significantly lower. This might be due to this model converging to a more sparse solution. The high latency is most likely due to the different GPU's used for the tests with the YOLO models and the test with the SSD model. At 0.05 GFLOPS the SSD model is the undisputed winner when considering energy usage of the model! However, when looking at some of the predictions made by the model, it looks like it has an abundance of False Negatives. YOLOv10-M looks like it has less False Negatives.
 <div style="display: flex; justify-content: space-around; align-items: center; text-align: center">
-    <img src="https://hackmd.io/_uploads/rkexPO3rA.jpg" alt="Image 1" style="max-width: 50%; height: auto; margin: 10px;">
-    <img src="https://hackmd.io/_uploads/S1llPO2BR.jpg" alt="Image 2" style="max-width: 50%; height: auto; margin: 10px;">
+    <img src="/images/lunar_zebro/ssd_predictions.png" alt="Image 1" style="max-width: 50%; height: auto; margin: 10px;">
 </div>
 <div style="text-align: center;">
-    <i>Two samples of predictions made by the SSD. The left shows some pictures with proper detections. The right shows many rocks of significant size undetected.</i>
+    <i>Sample of predictions made by the SSD. </i>
 </div>
 
 ---
@@ -158,9 +158,8 @@ The limited datasets of lunar rocks can be enhanced through data augmentation to
 Warping involved transforming the image, shrinking the reducing the top rows by 30% and performing cubic interpolation from the top downwards, thereby warping pixels into a trapezoid shape. This transformation was also applied to the bounding boxes to ensure accurate labeling of the newly stretched areas. However, unlike this example where images were cropped to simulate perspective changes, the dataset images were not cropped to avoid losing data outside the crop boundaries.
 
 <!-- HTML within Markdown for side-by-side images -->
-<div style="display: flex; justify-content: space-around; align-items: center;">
-    <img src="https://hackmd.io/_uploads/rJN86H2HR.png" alt="Image 1" style="max-width: 70%; height: auto; margin: 10px;">
-    <img src="https://hackmd.io/_uploads/SJQJaBnSA.png" alt="Image 2" style="max-width: 70%; height: auto; margin: 10px;">
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/yolov10_warping.png" alt="Warping example" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
 </div>
 
 <h4 style="text-align: center;">Histogram Equalization</h4>
@@ -169,30 +168,22 @@ Given that the dataset comprises simulated lunar landscapes, notable differences
 
 However, an analysis revealed a bias towards dark pixels in the images, which could potentially oversaturate them during equalization. To mitigate this, an approach excluding the lowest 25 pixel values (very dark pixels) was explored. The image and histogram comparison below illustrate this adjustment.
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="https://hackmd.io/_uploads/BkPGmK2SA.png" alt="Image 1" style="width: 30%; max-height: 200px;">
-    <img src="https://hackmd.io/_uploads/r1GHLthBC.png" alt="Image 2" style="width: 70%;">
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/regular_histogram_equalization.png" alt="Regular histogram equalization" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
 </div>
 <div style="text-align: center;">
-    <i>Left: Regular histogram equalization shows excessive brightness levels, obscuring rocks.
-Right: Our algorithm, excluding the lowest 25 pixel intensities (center), compared to normal histogram equalization (right).</i>
+    <i>Regular histogram equalization shows excessive brightness levels, obscuring rocks. Our algorithm excludes the lowest 25 pixel intensities to preserve detail.</i>
 </div>
 
 
 
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-    <figure style="width: 70%; text-align: center;">
-        <img src="https://hackmd.io/_uploads/H1nI3S2rA.png" alt="Image 1" style="width: 100%;">
-        <figcaption>Original Image</figcaption>
-    </figure>
-    <figure style="width: 70%; text-align: center;">
-        <img src="https://hackmd.io/_uploads/Hkq7hSnBA.png" alt="Image 2" style="width: 100%;">
-        <figcaption>In-house Equalization</figcaption>
-    </figure>
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/inhouse_equalization.png" alt="Original and in-house equalization comparison" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
+    <div style="font-size: 0.95rem; color: #555; margin-top: 0.5rem;">Original Image (Right), In-house Equalization (left)</div>
 </div>
 <div style="text-align: center;">
-    <i>Left: Dataset image. Right: Our histogram equalization improves rock contrast, as expected (see bottom right of images).</i>
+    <i>Left: Dataset image. Right: Our histogram equalization improves rock contrast, as expected.</i>
 </div>
 
 
@@ -201,13 +192,8 @@ Right: Our algorithm, excluding the lowest 25 pixel intensities (center), compar
 
 Finally, pooling was applied to able to increase the training dataset whilst also allowing for a better similarity between the training data and the real lunar data. A simple pooling method that took a set column and row number was implemented. In future a more random pooling technique is to be used in order to better simulate noise.
 
-<div style="display: flex; justify-content: space-between; align-items: flex-end;">
-    <div style="width: 38%; text-align: right;">
-        <img src="https://hackmd.io/_uploads/BkQKaSnrR.png" alt="Image 1" style="max-height: 200px;">
-    </div>
-    <div style="width: 70%;">
-        <img src="https://hackmd.io/_uploads/SJA5pS2S0.png" alt="Image 2" style="width: 100;">
-    </div>
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/pixel_pooling.png" alt="Pixel pooling comparison" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
 </div>
 <div style="text-align: center;">
     <i>On the left the "even-even" pooled image and on the right is the original image.</i>
@@ -238,32 +224,30 @@ Regarding image warping, compression sensitivity was evident upon image inspecti
 
 
 
-![warping](https://hackmd.io/_uploads/ry7Qn52B0.png)
-<div style="text-align: center;">
-    <i>Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M with warping.</i>
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/yolov10_warping.png" alt="YOLOv10-M warping confusion matrix" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
+    <div style="font-size: 0.95rem; color: #555; margin-top: 0.5rem;">Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M with warping.</div>
 </div>
 
-
-![histogram](https://hackmd.io/_uploads/H1bQ393H0.png)
-<div style="text-align: center;">
-    <i>Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M with histogram preprocessing.</i>
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/yolov10_warping.png" alt="YOLOv10-M histogram preprocessing confusion matrix" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
+    <div style="font-size: 0.95rem; color: #555; margin-top: 0.5rem;">Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M with histogram preprocessing.</div>
 </div>
 
-![pooling_trick](https://hackmd.io/_uploads/HJzQnq3HA.png)
-<div style="text-align: center;">
-    <i>Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M with pooling trick.</i>
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/yolov10_processing_trick.png" alt="YOLOv10-M pooling trick confusion matrix" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
+    <div style="font-size: 0.95rem; color: #555; margin-top: 0.5rem;">Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M with pooling trick.</div>
 </div>
 
 
 ### 3.3 Evaluate best performing model architecture on real dataset
 Validate the effectiveness of the proposed approach with the physical rover.
 To try and replicate the real-life scenario of a deployed lunar-zebro as well as possible. We took a prototype to the lunar test bed, which is located at the API building on the TU Delft campus. There, we took about 60 pictures of different scenarios with rocks on the testing bed. Then, we annotated the dataset using roboflow. Now, we will use the best scoring model from the previous sections and evaluate it on this dataset.
-<div style="display: flex; justify-content: space-around; align-items: center; text-align: center">
-    <img src="https://hackmd.io/_uploads/BkRhAOhH0.jpg" alt="Image 1" style="max-width: 50%; height: auto; margin: 10px;">
-    <img src="https://hackmd.io/_uploads/HyJaC_3r0.jpg" alt="Image 2" style="max-width: 50%; height: auto; margin: 10px;">
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/lunar_test_bed_dataset.png" alt="test bed dataset" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
 </div>
 <div style="text-align: center;">
-    <i>Two samples the lunar test bed dataset.</i>
+    <i>Sample the lunar test bed dataset.</i>
 </div>
 
 
@@ -276,23 +260,14 @@ To try and replicate the real-life scenario of a deployed lunar-zebro as well as
 
 #### Discussion
 Unfortunately, it seems as if the model performs significantly better on other samples from the same dataset as it was trained on.
-<div style="display: flex; justify-content: space-around; align-items: center; text-align: center">
-    <img src="https://hackmd.io/_uploads/HkGyXn3r0.jpg" alt="Image 1" style="max-width: 50%; height: auto; margin: 10px;">
-    <img src="https://hackmd.io/_uploads/ry5kV2hH0.jpg" alt="Image 2" style="max-width: 50%; height: auto; margin: 10px;">
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="/images/lunar_zebro/conf_matrix_0.75_dataset.png" alt="Test bed confusion matrix" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
 </div>
 <div style="text-align: center;">
     <i>Left: Confusion matrix with a confidence threshold of 0.75. Right: Note that the precision significantly peaks at 0.9.</i>
 </div>
 
 In the confusion matrix above as well as the images below, we can see that the amount of False Positives are particularly high with these settings. At the same time, the recall is close to 0.5, which only shows that the model is not very good at differentiating between rock and not-rock (As if it is flipping a coin).
-
-<div style="display: flex; justify-content: space-around; align-items: center; text-align: center">
-    <img src="https://hackmd.io/_uploads/ryxrXnnSR.jpg" alt="Image 1" style="max-width: 50%; height: auto; margin: 10px;">
-    <img src="https://hackmd.io/_uploads/rJ4SQ22rA.jpg" alt="Image 2" style="max-width: 50%; height: auto; margin: 10px;">
-</div>
-<div style="text-align: center;">
-    <i>Two samples the lunar test bed dataset.</i>
-</div>
 
 The images make it even more clear that the model is making many guesses of rocks, except for the correct rocks. Whenever there is a large, obvious rock in the image, it still fails to see it, but it does classify many small pebbles, which this dataset did not include, as rocks. 
 
