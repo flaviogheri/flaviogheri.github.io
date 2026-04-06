@@ -36,7 +36,7 @@ redirect_from:
 
 
 <div class="project-banner">
-  <a href="/projects/Imitation_learning" class="project-link">
+  <a href="/projects/imitation_learning/" class="project-link">
     <img src="/images/projects_posts/imitation.png" alt="Imitiation Learning Project" class="project-image">
     <div class="project-text">
       <h2>IMITATION LEARNING</h2>
