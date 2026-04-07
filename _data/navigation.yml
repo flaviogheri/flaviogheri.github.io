@@ -14,8 +14,8 @@ main:
   - title: " Youtube"
     url: /youtube/
   
-  - title: " Podcast"
-    url: /podcast/
+  # - title: " Podcast"
+  #   url: /podcast/
 
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
