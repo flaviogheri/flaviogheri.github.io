@@ -7,14 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Welcome ! I'm Flavio Gheri, a robotics engineer that is passionate in anything to do with software, electrical or mechanical, (as robotics implies). My academic background includes a bachelors in mechanical engineering and a masters in robotics. My work focuses on perception, particularly in the areas of SLAM and computer vision. 
+I build robots, and I write about how they work.
+I'm Flavio. A robotics engineer focused on perception, SLAM, and computer vision, with a background spanning mechanical engineering (Southampton) and robotics (TU Delft). I've worked on SLAM at Hilti, deep learning at NATO, and a little bit of everything in between with student teams — quadrupeds, lunar rovers, the occasional competition robot.
+You'll find technical write-ups on SLAM and perception, side projects in embedded systems and IoT, podcast conversations, and the occasional documentary detour. Some posts are for engineers, some for the merely curious — pick whatever looks interesting.
 
-In this page, my projects will vary from IoT, embedded systems all the way to podcasting-interviews. You'll find my thoughts, projects and exploration of the world of robotics along with my journey across the field. Whether you are interested in technical deep-dives in SLAM, algorithm explenations, AI projects or simply a tinkerer like me, you'll find all you are looking for in this site.
-
-Curious to see what I've been working on? Head over to my [Projects](/projects) page to explore my portfolio of work! 
-
-The navigation bar above will guide you through my professional journey - from technical projects to podcast appearances, hobby ventures, and documentaries. While some sections are still under development, I'm always happy to share more details about any project that catches your interest. Feel free to reach out!
-
+Start with [Projects](/projects)  or come say [hi!](https://www.linkedin.com/in/flaviogheri/)
 
 <!-- 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
