@@ -71,7 +71,7 @@ redirect_from:
     <div class="project-text">
       <h2>MagIA</h2>
       <p class="project-desc">
-        MagIA is a startup that uses AI in order to animate your drawrings. Great to to get your kids to draw and not use the tablet.
+        A startup I founded that uses AI to animate children's drawings — getting kids to draw on paper instead of reaching for the tablet.
       </p>
       <span class="reading-time">3 min read</span>
     </div>

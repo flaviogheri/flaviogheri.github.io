@@ -218,21 +218,8 @@ The three techniques will be compared based on same performance metrics as in th
 
 Based on the findings, augmentation techniques notably diminished the model's performance. Particularly, histogram equalization, intended to enhance performance as a preprocessing method, it did not yield improvements and will not be implemented in the final dataset. A reason for this discrepancy is that histogram equalization enhances contrast primarily on smaller rocks, which are not labeled in the dataset used, resulting in further loss. However, it should be noted that the overall model performance is sufficiently low that the absence of certain labels does not fully explain the situation and further evaluation should be made.
 
-Regarding image warping, compression sensitivity was evident upon image inspection. Future evaluations should consider a cropped perspective to assess potential impact. Overall, although preprocessing techniques showed some differences, the notable decrease in performance, particularly in recall, suggests that data augmentation may not be beneficial at all, especially in compairison to what was originally anticipated. Confusion matrices for each test and example results are provided below for reference.
+Regarding image warping, compression sensitivity was evident upon image inspection. Future evaluations should consider a cropped perspective to assess potential impact. Overall, although preprocessing techniques showed some differences, the notable decrease in performance, particularly in recall, suggests that data augmentation may not be beneficial at all, especially in compairison to what was originally anticipated. A confusion matrix and example result for the pooling-trick augmentation is provided below for reference.
 
-
-
-
-
-<div style="text-align: center; margin: 2rem 0;">
-    <img src="/images/lunar_zebro/yolov10_warping.png" alt="YOLOv10-M warping confusion matrix" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
-    <div style="font-size: 0.95rem; color: #555; margin-top: 0.5rem;">Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M with warping.</div>
-</div>
-
-<div style="text-align: center; margin: 2rem 0;">
-    <img src="/images/lunar_zebro/yolov10_warping.png" alt="YOLOv10-M histogram preprocessing confusion matrix" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">
-    <div style="font-size: 0.95rem; color: #555; margin-top: 0.5rem;">Normalized confusion matrix (left) and sample picture of the dataset (render0008.png) with ground truth and predictions (right) of model YOLOv10-M with histogram preprocessing.</div>
-</div>
 
 <div style="text-align: center; margin: 2rem 0;">
     <img src="/images/lunar_zebro/yolov10_processing_trick.png" alt="YOLOv10-M pooling trick confusion matrix" style="width: 90%; max-width: 1100px; height: auto; margin: 0 auto;">

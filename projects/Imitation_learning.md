@@ -85,7 +85,7 @@ Data collection was the most time-consuming stage. The procedure that worked bes
 I used success rate as the primary metric:
 
 $$
-	ext{Success Rate} = \frac{\text{Number of Successful Attempts}}{\text{Total Attempts}} \cdot 100\%
+	\text{Success Rate} = \frac{\text{Number of Successful Attempts}}{\text{Total Attempts}} \cdot 100\%
 $$
 
 <div style="text-align: center; margin: 1rem 0;">

@@ -1,26 +1,29 @@
 ---
 layout: single
-title: '"MagIA, let your imagination loose"'
+title: "MagIA: Bringing Children's Drawings to Life"
 permalink: /projects/MagIA/
 ---
-<!-- 
+
+**MagIA** is a startup I founded around a simple idea: take a child's hand-drawn
+character and turn it into an animated figure they can play with. The goal is to get
+kids drawing on paper again, away from the tablet, and then reward that creativity by
+bringing their drawing to life.
+
+You can find the startup's landing page at **[magiaworld.com](https://magiaworld.com/)**.
+
 <div style="text-align: center; margin: 2rem 0;">
   <video autoplay muted loop playsinline style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto; border: 1px solid #ddd; background: #111;">
-    <source src="/images/magia/animated_panorama.mp4" type="video/mp4">
-    Your browser does not support the animated panorama.
+    <source src="/images/magia/animation_pipeline.mp4" type="video/mp4">
+    Your browser does not support embedded video.
   </video>
-  <div style="font-size: 0.95rem; color: #555; margin-top: 0.75rem;">Animated panorama header demonstrating the generated open-world background experience.</div>
-</div> -->
+  <div style="font-size: 0.95rem; color: #555; margin-top: 0.75rem;">The MagIA pipeline: a drawing is detected, segmented, rigged with a pose skeleton, and animated.</div>
+</div>
 
-## Una Magia
-
-In this project, I implemented ideas for my startup. Unfotunately due to University and work committments I never had time to fully complete the project. But with someone willing to complete the startup with me, hopefully I will be able to get it up and running. 
-
-If you want to learn more about the Startup you can refer to *this website*. This blog post rather is aiming to give a general digest of both the tech stack that was thought up in order to develop the startup as well as the legal and distribution aspects that need to be thought out. Here is how the blogpost will be broken down to: 
-1. Creating an Application - the tech stack - 
-2. Including AI in the Application pipeline, - a how to - 
-3. How to found a startup, legal aspects to take care of
-4. How to distribute your product - cost reduction - cost reduction - cost reduction
+At its core, MagIA runs a drawing through a computer-vision pipeline — figure detection,
+segmentation, automatic joint/pose placement, and finally rigging — to produce a
+character that can move. This write-up covers how I approached the project: the
+application and tech stack, the AI pipeline behind the animation, and the product and
+distribution thinking behind turning it into a startup.
 
 
 ### Chapter 1. The Tech stack

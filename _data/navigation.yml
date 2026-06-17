@@ -9,13 +9,7 @@ main:
     url: /cv/
 
   - title: "Projects"
-    url: /projects/   
+    url: /projects/
 
-  - title: " Youtube"
-    url: /youtube/
-  
-  # - title: " Podcast"
-  #   url: /podcast/
-
-  # - title: "Guide"
-  #   url: /markdown/
+  - title: "YouTube"
+    url: https://www.youtube.com/@tinkeringrobot

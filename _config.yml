@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Flavio Gheri / Flavio Gheri"
+title                    : "Flavio Gheri"
 title_separator          : "-"
 name                     : &name "Flavio Gheri"
-description              : &description "personal description"
+description              : &description "Robotics engineer working on perception, SLAM and computer vision. Projects, write-ups and experiments across software, embedded and AI."
 url                      : https://flaviogheri.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "flaviogheri/flaviogheri.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Flavio-Arnaud Gheri"
   pronouns         : # example: "she/her"  
-  bio              : "Welcome to Flavio's Page"
+  bio              : "Robotics engineer — perception, SLAM & computer vision."
   location         : "Europe"
   employer         : "TU Delft"
   uri              : # URL
