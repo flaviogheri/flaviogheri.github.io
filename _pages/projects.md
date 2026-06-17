@@ -38,10 +38,23 @@ redirect_from:
 
 
 <div class="project-banner">
+  <a href="/projects/poletilt/" class="project-link">
+    <img src="/images/projects_posts/camera.png" alt="6D Pose Estimation Project" class="project-image">
+    <div class="project-text">
+      <h2>Real-Time 6D Pose Estimation</h2>
+      <p class="project-desc">
+        My MSc thesis: fusing a robotic total station with an IMU through a factor-graph and moving-horizon estimator to track a survey pole's tip in real time — reaching millimetre accuracy.
+      </p>
+      <span class="reading-time">8 min read</span>
+    </div>
+  </a>
+</div>
+
+<div class="project-banner">
   <a href="/projects/imitation_learning/" class="project-link">
     <img src="/images/projects_posts/imitation.png" alt="Imitiation Learning Project" class="project-image">
     <div class="project-text">
-      <h2>IMITATION LEARNING</h2>
+      <h2>Imitation Learning</h2>
       <p class="project-desc">
         Small project on Imitation Learning. Used SO100 robot hand to learn how to pick up a cup.
       </p>
@@ -56,7 +69,7 @@ redirect_from:
   <a href="/projects/lunar_zebro" class="project-link">
     <img src="/images/projects_posts/explorer.png" alt="Lunar Zebro Research" class="project-image">
     <div class="project-text">
-      <h2>LUNAR ZEBRO</h2>
+      <h2>Lunar Zebro</h2>
       <p class="project-desc">
         Work within Lunar Zebro Team. First student led team to be sending a rover to the moon. 
       </p>
@@ -81,11 +94,11 @@ redirect_from:
 
 <div class="project-banner">
   <a href="/projects/path_planning" class="project-link">
-    <img src="/images/projects_posts/milestones.png" alt="Path Planning Project" class="project-image">
+    <img src="/images/projects_posts/milestones.png" alt="Drone Path Planning Project" class="project-image">
     <div class="project-text">
-      <h2>PATH PLANNING ASSIGNMENT</h2>
+      <h2>Drone Path Planning</h2>
         <p class="project-desc">
-        Assignement on Path Planning with a drone. Learnt a lot about path planning, simulation and how to use PyBullet.
+        A global planner built from scratch using the Dijkstra algorithm to guide a quadrotor safely through obstacle-filled environments in a PyBullet simulation.
       </p>
       <span class="reading-time">5 min read</span>
     </div>
@@ -96,11 +109,24 @@ redirect_from:
   <a href="/projects/malware_detection" class="project-link">
     <img src="/images/projects_posts/virus.png" alt="malware_detection" class="project-image">
     <div class="project-text">
-      <h2>MALWARE DETECTION</h2>
+      <h2>Malware Detection</h2>
         <p class="project-desc">
-        Assignment on using ANN in order to detect malware. More specifically implemented CNN on bit maps of the malware. Turned out more effective than classical machine learning techniques.
+        A CNN that detects malware by treating executable binaries as grayscale images — turning out more effective than the classical machine-learning baselines.
       </p>
       <span class="reading-time">2 min read</span>
+    </div>
+  </a>
+</div>
+
+<div class="project-banner">
+  <a href="/projects/swarm_path_planning" class="project-link">
+    <img src="/images/projects_posts/swarm.png" alt="Swarm Path Planning Project" class="project-image">
+    <div class="project-text">
+      <h2>Swarm Path Planning</h2>
+        <p class="project-desc">
+        A side project reproducing potential-field swarm formation control — building the artificial fields that hold a group of robots in formation, and an honest look at what didn't work.
+      </p>
+      <span class="reading-time">3 min read</span>
     </div>
   </a>
 </div>

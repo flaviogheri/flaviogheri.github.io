@@ -1,68 +1,406 @@
-.project-banner {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* More specific selectors using !important to override any conflicting styles */
-  .project-link,
-  .project-link:visited,
-  .project-link:active,
-  .project-link:hover {
-    display: flex;
-    align-items: center;
-    text-decoration: none !important;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 100%;
-    max-width: 1200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-link:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  .project-image {
-    width: 15%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .project-text {
-    padding: 15px;
-    flex: 1;
-  }
-  
-  .project-text h2 {
-    font-size: 1.4em;
-    margin: 0 0 10px;
-    color: #333;
-    text-decoration: none !important;
-  }
-  
+/* ==========================================================================
+   Custom theme layer — loaded after the compiled Minimal Mistakes main.css
+   Aesthetic: warm-paper editorial minimalism (inspired by fromjason.xyz).
+   Single clean column, strong typography, hairline dividers, minimal boxes.
+   ========================================================================== */
 
-  .project-desc {
-    font-size: 1em;        /* same as your paragraph */
-    color: #666;
-    margin: 0 0 0.5em;     /* spacing below */
-    line-height: 1.4;
-  }
-    
-  .reading-time {
-    font-size: 0.8em;      /* smaller “meta” text */
-    color: #999;
-    margin-top: auto;      /* push to the bottom of the text block */
-  }
+:root {
+  --paper: #f7f3ea;        /* warm off-white background          */
+  --ink: #211d1a;          /* near-black warm text               */
+  --ink-soft: #5f574e;     /* muted secondary text               */
+  --rule: #e3dccb;         /* hairline dividers                  */
+  --accent: #b1492f;       /* rust / oxblood — decorative accent */
+  --accent-deep: #8f3622;
+  --link: #1f1b18;         /* links are ink with accent underline*/
+  --serif-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --serif-read: "Newsreader", Georgia, "Times New Roman", serif;
+  --measure: 42rem;        /* reading column width               */
+}
 
+/* ---- Base ------------------------------------------------------------- */
+html { background-color: var(--paper); }
 
-  .project-text p {
-    font-size: 1.2em;
-    color: #666;
-    text-decoration: none !important;
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif-read);
+  font-size: 20px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page__content,
+.archive,
+.page,
+.page__inner-wrap { background: transparent; }
+
+p, li { font-family: var(--serif-read); }
+
+/* Headings — display serif */
+h1, h2, h3, h4,
+.page__title,
+.archive__item-title,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4 {
+  font-family: var(--serif-display);
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.page__content h2 { font-size: 1.7rem; margin-top: 2.2rem; }
+.page__content h3 { font-size: 1.3rem; margin-top: 1.6rem; }
+
+/* The big page title (shown on archive/single layouts) */
+.page__title {
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+/* ---- Reading column -------------------------------------------------- */
+.page__content { max-width: var(--measure); }
+/* On pages without the author sidebar, centre the column */
+.page > .page__inner-wrap > .page__content,
+.page__content { margin-left: auto; margin-right: auto; }
+
+/* ---- Links ------------------------------------------------------------ */
+.page__content a:not(.btn):not(.project-link):not(.hero-cta):not(.case-back),
+.page a:not(.btn):not(.project-link) {
+  color: var(--link);
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  padding-bottom: 1px;
+  transition: background-size 0.2s ease, color 0.2s ease;
+}
+
+.page__content a:not(.btn):not(.project-link):not(.hero-cta):not(.case-back):hover {
+  color: var(--accent-deep);
+  background-size: 100% 2px;
+}
+
+/* ---- Masthead (top navigation) --------------------------------------- */
+.masthead {
+  background: transparent;
+  border-bottom: 1px solid var(--rule);
+  box-shadow: none;
+}
+
+.greedy-nav { background: transparent; }
+
+.greedy-nav a {
+  font-family: var(--serif-display);
+  color: var(--ink-soft);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.greedy-nav a:hover { color: var(--accent); }
+
+.masthead__menu-item--lg a,
+.greedy-nav .site-title {
+  color: var(--ink) !important;
+  font-weight: 700 !important;
+  font-size: 1.15rem !important;
+  letter-spacing: -0.01em;
+}
+
+/* ---- Author sidebar — quiet, no card --------------------------------- */
+.sidebar { opacity: 1; }
+
+.sidebar .author__avatar img {
+  border-radius: 50%;
+  border: 2px solid var(--paper);
+  box-shadow: 0 2px 10px rgba(33, 29, 26, 0.12);
+  transition: transform 0.3s ease;
+}
+.sidebar .author__avatar img:hover { transform: scale(1.03); }
+
+.author__name { font-family: var(--serif-display); font-weight: 700; }
+.author__bio { font-family: var(--serif-read); color: var(--ink-soft); }
+.author__urls.social-icons li a:hover { color: var(--accent); }
+
+/* ---- Footer ----------------------------------------------------------- */
+.page__footer {
+  background: transparent;
+  color: var(--ink-soft);
+  margin-top: 3rem;
+}
+.page__footer footer { border-top: 1px solid var(--rule); }
+
+/* ---- Horizontal rule as a small ornament ----------------------------- */
+.page__content hr {
+  border: 0;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+.page__content hr::before {
+  content: "\2042";            /* asterism-ish flourish */
+  color: var(--accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.4em;
+}
+
+/* ==========================================================================
+   Landing-page hero — typographic, no box
+   ========================================================================== */
+.home-hero { margin: 0.5rem 0 1.5rem; }
+
+.home-hero h1 {
+  font-family: var(--serif-display);
+  font-weight: 900;
+  font-size: 2.7rem;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+  max-width: 18ch;
+}
+
+.home-hero p {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: var(--measure);
+  margin: 0 0 1.4rem;
+}
+
+.home-hero .hero-cta {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  border: none !important;
+  margin-right: 1.5rem;
+  border-bottom: 2px solid var(--accent) !important;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+.home-hero .hero-cta:hover { color: var(--accent) !important; }
+.home-hero .hero-cta.secondary { border-bottom-color: var(--rule) !important; }
+
+/* Dropcap for an intro paragraph */
+.dropcap::first-letter {
+  font-family: var(--serif-display);
+  font-weight: 900;
+  float: left;
+  font-size: 3.4rem;
+  line-height: 0.8;
+  padding: 0.1rem 0.6rem 0 0;
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   Project index — flowing list, not cards
+   ========================================================================== */
+.project-banner { margin: 0; display: block; }
+
+.project-link,
+.project-link:visited,
+.project-link:active,
+.project-link:hover {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  text-decoration: none !important;
+  background: transparent;
+  border: none;
+  border-top: 1px solid var(--rule);
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  transition: none;
+}
+.project-banner:last-of-type .project-link { border-bottom: 1px solid var(--rule); }
+
+.project-image {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: saturate(0.95);
+  transition: transform 0.3s ease;
+}
+.project-link:hover .project-image { transform: scale(1.06) rotate(-2deg); }
+
+.project-text { padding: 0; flex: 1; display: block; }
+
+.project-text h2 {
+  font-family: var(--serif-display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+.project-link:hover .project-text h2 { color: var(--accent); }
+
+.project-desc {
+  font-family: var(--serif-read);
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.35rem;
+  line-height: 1.5;
+}
+
+.reading-time {
+  font-family: var(--serif-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .project-link { gap: 0.9rem; }
+  .project-image { width: 56px; height: 56px; }
+}
+
+/* ==========================================================================
+   Case-study layout (project pages, e.g. Path Planning) — flat & typographic
+   ========================================================================== */
+/* On case-study pages, the .case-hero IS the title block, so hide the
+   theme's duplicate page title/header. */
+.page__inner-wrap:has(.case-hero) > header { display: none; }
+
+.case-back {
+  display: inline-block;
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: var(--ink-soft) !important;
+  text-decoration: none !important;
+  border: none !important;
+}
+.case-back:hover { color: var(--accent) !important; }
+
+.case-hero {
+  background: transparent;
+  color: var(--ink);
+  padding: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  box-shadow: none;
+}
+
+.case-eyebrow {
+  display: inline-block;
+  font-family: var(--serif-display);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.case-title {
+  color: var(--ink) !important;
+  font-family: var(--serif-display);
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.case-summary {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: var(--measure);
+  margin: 0 0 1.25rem;
+}
+
+.tag-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.tag {
+  font-family: var(--serif-display);
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+}
+
+.case-section {
+  position: relative;
+  padding: 0.5rem 0 1rem;
+  margin-top: 2.5rem;
+}
+.case-section + .case-section { border-top: 1px solid var(--rule); padding-top: 2rem; }
+
+.section-num {
+  display: inline-block;
+  font-family: var(--serif-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+.case-section h2 { margin-top: 0.25rem; font-size: 1.9rem; }
+
+/* Fine vs coarse grid demo */
+.grid-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1.75rem 0;
+}
+.grid-demo {
+  margin: 0;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+.grid-demo:hover { transform: translateY(-3px); }
+.grid-demo svg {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+}
+.grid-demo figcaption {
+  margin-top: 0.7rem;
+  font-family: var(--serif-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/* Code + tables sit a little more quietly on paper */
+.page__content div.highlighter-rouge,
+.page__content figure.highlight {
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+.page__content table { font-family: var(--serif-display); font-size: 0.9rem; }
+
+/* ==========================================================================
+   Motion
+   ========================================================================== */
+#main { animation: fadeUp 0.5s ease both; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
   }
-  
+}
