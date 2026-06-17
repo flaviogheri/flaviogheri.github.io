@@ -1,7 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pkill -f \"http.server 8099\")"
+      "Bash(pkill -f \"http.server 8099\")",
+      "Bash(unzip -o \"blob/Thesis_FINAL_Draft\\(1\\).zip\" \"mainmatter/4Methodology.tex\" \"mainmatter/1introduction.tex\" -d /tmp/thesis_extract)",
+      "Bash(mkdir -p /tmp/thesis_figs)",
+      "Bash(unzip -o -j 'blob/Thesis_FINAL_Draft\\(1\\).zip' figures/1introduction/construction_stakeout_day.png figures/2methodology/MHE_Optimizer.png figures/2methodology/code_structure.png figures/4results_discussion/plt_lag_behaviour.png figures/4results_discussion/robot_plt_example.png figures/3experimentation/experiment_setup/allan_deviation/gyro_allan.png figures/3experimentation/experiment_setup/plt400_error_distribution/rho_error.png -d /tmp/thesis_figs)",
+      "Bash(awk '{print $5,$9}')",
+      "Bash(cp /tmp/thesis_figs/construction_stakeout_day.png images/poletilt/stakeout_workflow.png)",
+      "Bash(cp /tmp/thesis_figs/MHE_Optimizer.png images/poletilt/system_architecture.png)",
+      "Bash(cp /tmp/thesis_figs/gyro_allan.png images/poletilt/allan_deviation.png)",
+      "Bash(cp /tmp/thesis_figs/rho_error.png images/poletilt/radial_error_distribution.png)",
+      "Bash(google-chrome --headless=new --disable-gpu --no-sandbox --hide-scrollbars --virtual-time-budget=8000 --window-size=1000,5200 --screenshot=\"/tmp/v6_pose_full.png\" \"http://localhost:8099/projects/poletilt/\")",
+      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('/tmp/v6_pose_full.png'\\); print\\('size',im.size\\); im.crop\\(\\(0,2300,1000,3500\\)\\).save\\('/tmp/v6_pose_eq.png'\\)\")",
+      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('/tmp/v6_pose_full.png'\\); im.crop\\(\\(0,3450,1000,4500\\)\\).save\\('/tmp/v6_pose_eq2.png'\\)\")"
     ]
   }
 }

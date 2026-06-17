@@ -184,15 +184,25 @@ h1, h2, h3, h4,
 .home-hero .hero-cta:hover { color: var(--accent) !important; }
 .home-hero .hero-cta.secondary { border-bottom-color: var(--rule) !important; }
 
-/* Dropcap for an intro paragraph */
+/* Illuminated initial — a framed "book-plate" drop cap with fine detailing */
 .dropcap::first-letter {
   font-family: var(--serif-display);
   font-weight: 900;
   float: left;
-  font-size: 3.4rem;
-  line-height: 0.8;
-  padding: 0.1rem 0.6rem 0 0;
+  font-size: 3.1rem;
+  line-height: 1;
+  margin: 0.08em 0.7rem 0.05rem 0;
+  padding: 0.28rem 0.42rem 0.18rem;
   color: var(--accent);
+  background:
+    radial-gradient(circle at 30% 25%, #fffdf8 0%, #f3ecdc 100%);
+  border: 1.5px solid var(--accent);
+  border-radius: 3px;
+  /* layered frame: paper gap + hairline outer rule = printed-plate detail */
+  box-shadow:
+    0 0 0 2px #f7f3ea,
+    0 0 0 3.5px var(--accent),
+    0 2px 6px rgba(33, 29, 26, 0.15);
 }
 
 /* ==========================================================================
@@ -387,6 +397,77 @@ h1, h2, h3, h4,
   font-size: 0.85rem;
 }
 .page__content table { font-family: var(--serif-display); font-size: 0.9rem; }
+
+/* ==========================================================================
+   Centered home page (fromjason-style single column)
+   ========================================================================== */
+/* The .home-wrap is the title block, so hide the theme's page header on home. */
+.page__inner-wrap:has(.home-wrap) > header { display: none; }
+
+.home-wrap {
+  max-width: 40rem;
+  margin: 1rem auto 0;
+  text-align: center;
+}
+
+.home-avatar {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.25rem;
+  display: block;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 16px rgba(33, 29, 26, 0.18);
+}
+
+.home-title {
+  font-family: var(--serif-display);
+  font-weight: 900;
+  font-size: 2.6rem;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.6rem;
+  color: var(--ink);
+}
+
+.home-tagline {
+  font-family: var(--serif-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.5rem;
+}
+
+.home-intro {
+  text-align: left;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.home-cta { margin: 1.5rem 0 0; }
+.home-cta .hero-cta { display: inline-block; margin: 0 0.75rem; }
+
+.home-social {
+  font-family: var(--serif-display);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-top: 1rem;
+}
+.home-social a { font-weight: 600; }
+
+/* Ornamental divider — original filigree, in the spirit of old-web banners */
+.ornament {
+  display: block;
+  width: 160px;
+  height: 18px;
+  margin: 1.75rem auto;
+  color: var(--accent);
+}
+.ornament path,
+.ornament line,
+.ornament circle { stroke: currentColor; }
+.ornament .fill { fill: currentColor; stroke: none; }
 
 /* ==========================================================================
    Motion
