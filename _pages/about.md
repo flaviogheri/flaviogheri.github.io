@@ -11,8 +11,8 @@ redirect_from:
 
   <img class="home-portrait" src="/images/profile.png" alt="Flavio Gheri" />
 
-  <p class="tp-sub1">Robots, SLAM &amp; Projects</p>
-  <p class="tp-sub2">And Other Curiosities</p>
+  <p class="tp-sub1">Robots, SLAM </p>
+  <p class="tp-sub2">&amp; Other Curiosities</p>
   <p class="tp-sub3">Worth Writing Down</p>
 
   <div class="tp-byline">Built by Flavio Gheri</div>
