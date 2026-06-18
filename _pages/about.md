@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="home-wrap">
 
-  <img class="home-portrait" src="/images/profile.png" alt="Flavio Gheri" />
+  <img class="home-portrait" src="/images/Rhinoceros.svg" alt="Rhinoceros" />
 
   <p class="tp-sub1">Robots, SLAM </p>
   <p class="tp-sub2">&amp; Other Curiosities</p>

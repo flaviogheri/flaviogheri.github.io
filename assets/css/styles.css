@@ -139,7 +139,7 @@ h1, h2, h3, h4,
 .sidebar { opacity: 1; }
 
 .sidebar .author__avatar img {
-  border-radius: 50%;
+  border-radius: 12px;
   border: 2px solid var(--paper);
   box-shadow: 0 2px 10px rgba(33, 29, 26, 0.12);
   transition: transform 0.3s ease;
@@ -162,14 +162,17 @@ h1, h2, h3, h4,
   padding-top: 1.75rem;
 }
 
-.page__footer-custom { padding: 0.5rem 0 1.25rem; }
+.page__footer-custom {
+  padding: 0.5rem 0 1.25rem;
+  text-align: center;
+}
 
 .footer-bird {
   display: block;
-  width: 175px;
-  max-width: 70%;
+  width: 110px;
+  max-width: 60%;
   height: auto;
-  margin: 0 auto 0.85rem;
+  margin: 0 auto 0.7rem;
   opacity: 0.85;
 }
 
@@ -178,6 +181,11 @@ h1, h2, h3, h4,
   font-size: 0.95rem;
   color: var(--ink-soft);
   letter-spacing: 0.03em;
+}
+.footer-joke .footer-note {
+  font-style: italic;
+  font-size: 0.85em;
+  opacity: 0.8;
 }
 
 .footer-links {
@@ -188,16 +196,15 @@ h1, h2, h3, h4,
 .footer-links a { color: var(--ink-soft); }
 .footer-links a:hover { color: var(--accent); }
 
-/* ---- Illustrated drop-cap (per-page initial, set by JS) --------------- */
+/* ---- Illustrated initial (per-page first letter, set by JS) ----------- */
+/* Only slightly larger than the surrounding text — an enlarged first
+   letter, not a multi-line drop cap. */
 .dropcap-letter {
-  float: left;
-  width: 3.6em;
-  height: auto;
-  margin: 0.12em 0.55rem 0 0;
-  shape-outside: content-box;
-}
-@media (max-width: 600px) {
-  .dropcap-letter { width: 3em; }
+  display: inline-block;
+  height: 1.5em;
+  width: auto;
+  vertical-align: -0.34em;
+  margin-right: 0.02em;
 }
 
 /* ---- Horizontal rule as a small ornament ----------------------------- */
@@ -476,17 +483,12 @@ h1, h2, h3, h4,
   text-align: center;
 }
 
-/* Small framed portrait (kept modest, with a print-like treatment) */
+/* Centered header illustration (the rhino) */
 .home-portrait {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 170px;
+  height: auto;
   display: block;
-  margin: 0 auto 1.75rem;
-  filter: grayscale(0.3) contrast(1.05) sepia(0.08);
-  border: 1px solid var(--ink);
-  box-shadow: 0 0 0 4px var(--paper), 0 0 0 5px var(--rule);
+  margin: 0 auto 1.5rem;
 }
 
 /* Title-page lettering: red name, then decreasing letter-spaced caps */

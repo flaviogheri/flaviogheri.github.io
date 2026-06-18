@@ -21,7 +21,7 @@ repository               : "flaviogheri/flaviogheri.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "me_funny.png"
   name             : "Flavio-Arnaud Gheri"
   pronouns         : # example: "she/her"  
   bio              : "Robotics engineer — perception, SLAM & computer vision."
