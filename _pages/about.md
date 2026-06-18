@@ -21,24 +21,7 @@ redirect_from:
   <p class="tp-review">"World's best engineer."</p>
   <p class="tp-review-by">— Mom</p>
 
-  <p class="home-intro">
-    <span class="initial">
-      <svg class="initial-frame" viewBox="0 0 80 80" fill="none" aria-hidden="true">
-        <rect x="3" y="3" width="74" height="74" fill="#fbf8f1" stroke="#211d1a" stroke-width="2.5" />
-        <rect x="8.5" y="8.5" width="63" height="63" stroke="#211d1a" stroke-width="1" />
-        <g fill="#211d1a" stroke="none">
-          <path d="M8.5 5 L12 8.5 L8.5 12 L5 8.5 Z" />
-          <path d="M71.5 5 L75 8.5 L71.5 12 L68 8.5 Z" />
-          <path d="M8.5 68 L12 71.5 L8.5 75 L5 71.5 Z" />
-          <path d="M71.5 68 L75 71.5 L71.5 75 L68 71.5 Z" />
-          <path d="M40 5.5 L43 8.5 L40 11.5 L37 8.5 Z" />
-          <path d="M40 68.5 L43 71.5 L40 74.5 L37 71.5 Z" />
-          <path d="M5.5 40 L8.5 37 L11.5 40 L8.5 43 Z" />
-          <path d="M68.5 40 L71.5 37 L74.5 40 L71.5 43 Z" />
-        </g>
-      </svg>
-      <span class="initial-letter">H</span>
-    </span>i, I'm Flavio — a robotics engineer focused on perception, SLAM and computer vision. My background spans mechanical engineering (Southampton) and robotics (TU&nbsp;Delft), and I've worked on SLAM in industry, deep learning at NATO, and a bit of everything in between with student teams: quadrupeds, lunar rovers, and the occasional competition robot. You'll find technical write-ups, side projects, and the stories behind them here — some for engineers, some for the merely curious.</p>
+  <p class="home-intro">Hi, I'm Flavio — a robotics engineer focused on perception, SLAM and computer vision. My background spans mechanical engineering (Southampton) and robotics (TU&nbsp;Delft), and I've worked on SLAM in industry, deep learning at NATO, and a bit of everything in between with student teams: quadrupeds, lunar rovers, and the occasional competition robot. You'll find technical write-ups, side projects, and the stories behind them here — some for engineers, some for the merely curious.</p>
 
   <p class="home-cta">
     <a class="hero-cta" href="/projects/">Explore my projects →</a>

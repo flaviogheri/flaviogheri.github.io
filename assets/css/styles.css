@@ -4,6 +4,29 @@
    Single clean column, strong typography, hairline dividers, minimal boxes.
    ========================================================================== */
 
+/* ---- Self-hosted Volume TC (Tom Chalky) — personal-use permission ----- */
+@font-face {
+  font-family: "Volume TC";
+  src: url("../fonts/Volume-TC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Volume TC";
+  src: url("../fonts/Volume-TC-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Volume TC Sans";
+  src: url("../fonts/Volume-TC-Sans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --paper: #f7f3ea;        /* warm off-white background          */
   --ink: #211d1a;          /* near-black warm text               */
@@ -12,8 +35,9 @@
   --accent: #b1492f;       /* rust / oxblood — decorative accent */
   --accent-deep: #8f3622;
   --link: #1f1b18;         /* links are ink with accent underline*/
-  --serif-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --serif-read: "Newsreader", Georgia, "Times New Roman", serif;
+  --serif-display: "Volume TC", Georgia, "Times New Roman", serif;
+  --serif-read: "Volume TC", Georgia, "Times New Roman", serif;
+  --sans-alt: "Volume TC Sans", Verdana, sans-serif;
   --measure: 42rem;        /* reading column width               */
 }
 
@@ -130,9 +154,51 @@ h1, h2, h3, h4,
 .page__footer {
   background: transparent;
   color: var(--ink-soft);
-  margin-top: 3rem;
+  margin-top: 3.5rem;
+  text-align: center;
 }
-.page__footer footer { border-top: 1px solid var(--rule); }
+.page__footer footer {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.75rem;
+}
+
+.page__footer-custom { padding: 0.5rem 0 1.25rem; }
+
+.footer-bird {
+  display: block;
+  width: 175px;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto 0.85rem;
+  opacity: 0.85;
+}
+
+.footer-joke {
+  font-family: var(--serif-display);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.03em;
+}
+
+.footer-links {
+  font-family: var(--serif-display);
+  font-size: 0.78rem;
+  margin-top: 0.5rem;
+}
+.footer-links a { color: var(--ink-soft); }
+.footer-links a:hover { color: var(--accent); }
+
+/* ---- Illustrated drop-cap (per-page initial, set by JS) --------------- */
+.dropcap-letter {
+  float: left;
+  width: 3.6em;
+  height: auto;
+  margin: 0.12em 0.55rem 0 0;
+  shape-outside: content-box;
+}
+@media (max-width: 600px) {
+  .dropcap-letter { width: 3em; }
+}
 
 /* ---- Horizontal rule as a small ornament ----------------------------- */
 .page__content hr {
