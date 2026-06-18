@@ -5,9 +5,9 @@
 <script>
 (function () {
   function addDropCap() {
-    var p = document.querySelector('.home-intro')
-         || document.querySelector('.case-section p')
-         || document.querySelector('.page__content > p');
+    // Decorative initial only on the home page — it doesn't suit the
+    // denser project/article pages.
+    var p = document.querySelector('.home-intro');
     if (!p || p.querySelector('.dropcap-letter')) return;
 
     var walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT, null);

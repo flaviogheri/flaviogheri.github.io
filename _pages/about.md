@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "I build robots — and write about how they work."
 author_profile: false
 redirect_from: 
   - /about/

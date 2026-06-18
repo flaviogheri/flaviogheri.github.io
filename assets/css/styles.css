@@ -138,13 +138,13 @@ h1, h2, h3, h4,
 /* ---- Author sidebar — quiet, no card --------------------------------- */
 .sidebar { opacity: 1; }
 
-.sidebar .author__avatar img {
-  border-radius: 12px;
-  border: 2px solid var(--paper);
-  box-shadow: 0 2px 10px rgba(33, 29, 26, 0.12);
+.author__avatar img {
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  box-shadow: 0 2px 10px rgba(33, 29, 26, 0.1);
   transition: transform 0.3s ease;
 }
-.sidebar .author__avatar img:hover { transform: scale(1.03); }
+.author__avatar img:hover { transform: scale(1.02); }
 
 .author__name { font-family: var(--serif-display); font-weight: 700; }
 .author__bio { font-family: var(--serif-read); color: var(--ink-soft); }
